@@ -1,6 +1,6 @@
 export const fallaciesSlide = `
 <div class="slide">
-    <div class="section-tag">Sección 4: Práctica Avanzada</div>
+    <div class="section-tag">Sección 2: Herramientas</div>
     <h2 class="slide-title">Errores de Resolución: <span>Falacias Formales</span></h2>
     <div class="content">
         <div class="case-intro" style="margin-bottom: 20px; color: var(--text-dim);">
@@ -92,7 +92,7 @@ export const explosionSlide = `
 
 export const dilemmaTipSlide = `
 <div class="slide">
-    <div class="section-tag">Sección 4: Práctica Avanzada</div>
+    <div class="section-tag">Sección 2: Herramientas</div>
     <h2 class="slide-title">Nota de la Cátedra (UCV): <span>Dilema Constructivo</span></h2>
     <div class="content">
         <div class="case-intro" style="margin-bottom: 15px;">
@@ -126,7 +126,7 @@ export const dilemmaTipSlide = `
 
 export const decisionAlgorithmSlide = `
 <div class="slide">
-    <div class="section-tag">Sección 4: Práctica Avanzada</div>
+    <div class="section-tag">Sección 2: Herramientas</div>
     <h2 class="slide-title">Algoritmo de Selección: <span>Estrategia de Resolución</span></h2>
     <div class="content">
         <div class="case-intro" style="margin-bottom: 15px; color: var(--text-dim);">

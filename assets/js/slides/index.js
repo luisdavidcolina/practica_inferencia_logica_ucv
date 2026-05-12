@@ -109,6 +109,9 @@ export const slides = [
     inferenceTip5Slide,
     comparisonSlide,
     inferenceLawsTableSlide,
+    fallaciesSlide,
+    dilemmaTipSlide,
+    decisionAlgorithmSlide,
 
     // Sección 3: Práctica
     methodologySlide,
@@ -139,9 +142,6 @@ export const slides = [
     combinedEx2Slide1,
     combinedEx2Slide2,
     combinedEx2Slide3,
-    fallaciesSlide,
-    dilemmaTipSlide,
-    decisionAlgorithmSlide,
     bibliographySlide
 ];
 

@@ -2,6 +2,9 @@ export const advEx1Slide1 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 2: <span>Reducción al Absurdo (10.e) (1/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> (p ∨ q) → (r ∧ s), (r ∨ t) → (¬w ∧ x), (w ∨ y) → (p ∧ z) ∴ ¬w
+    </div>
     <div class="content">
         <div class="grid-2">
             <div class="concept-card">
@@ -31,6 +34,9 @@ export const advEx1Slide2 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 2: <span>Demostración RAA (2/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> (p ∨ q) → (r ∧ s), (r ∨ t) → (¬w ∧ x), (w ∨ y) → (p ∧ z) ∴ ¬w
+    </div>
     <div class="content">
         <div class="formal-code" style="padding: 15px;">
             <strong style="color:var(--ucv-accent);">Fase 1: Derivación Inicial</strong>
@@ -64,6 +70,9 @@ export const advEx1Slide3 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 2: <span>Demostración RAA (3/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> (p ∨ q) → (r ∧ s), (r ∨ t) → (¬w ∧ x), (w ∨ y) → (p ∧ z) ∴ ¬w
+    </div>
     <div class="content">
         <div class="formal-code" style="padding: 15px;">
             <strong style="color:var(--ucv-accent);">Fase 2: Reacción en Cadena y Contradicción</strong>
@@ -94,6 +103,9 @@ export const advEx2Slide1 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 3: <span>Prueba por Casos (Examen UCV) (1/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> ¬f ∨ [(g ∧ h) ∨ ¬(g ∨ h)], (g → h) → [(h → g) → i] ∴ ¬f ∨ i
+    </div>
     <div class="content">
         <div class="grid-2">
             <div class="concept-card">
@@ -122,6 +134,9 @@ export const advEx2Slide2 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 3: <span>Demostración Casos (2/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> ¬f ∨ [(g ∧ h) ∨ ¬(g ∨ h)], (g → h) → [(h → g) → i] ∴ ¬f ∨ i
+    </div>
     <div class="content">
         <div class="formal-code" style="padding: 15px;">
             <strong style="color:var(--ucv-accent);">Ruta A: Evaluando el primer escenario</strong>
@@ -153,6 +168,9 @@ export const advEx2Slide3 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 3: <span>Demostración Casos (3/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> ¬f ∨ [(g ∧ h) ∨ ¬(g ∨ h)], (g → h) → [(h → g) → i] ∴ ¬f ∨ i
+    </div>
     <div class="content">
         <div class="formal-code" style="padding: 12px;">
             <strong style="color:var(--ucv-accent);">Ruta B: El lado derecho de la disyunción</strong>
@@ -187,6 +205,9 @@ export const advEx3Slide1 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 4: <span>Prueba Condicional (6.d) (1/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> d → (a ∨ c), d ∧ ¬a ∴ c
+    </div>
     <div class="content">
         <div class="grid-2">
             <div class="concept-card">
@@ -218,6 +239,9 @@ export const advEx3Slide2 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 4: <span>Demostración PC (2/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> d → (a ∨ c), d ∧ ¬a ∴ c
+    </div>
     <div class="content">
         <div class="formal-code" style="padding: 15px;">
             <strong style="color:var(--ucv-accent);">Fase 1: Asumiendo el antecedente</strong>
@@ -252,6 +276,9 @@ export const advEx3Slide3 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 4: <span>Demostración PC (3/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> d → (a ∨ c), d ∧ ¬a ∴ c
+    </div>
     <div class="content">
         <div class="formal-code" style="padding: 15px;">
             <strong style="color:var(--ucv-accent);">Fase 2: Derivación del Consecuente</strong>
@@ -284,6 +311,9 @@ export const advEx4Slide1 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 5: <span>Prueba de Invalidez (13.d) (1/1)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> p ∧ ¬q, (r ∧ s) → (p → q), (t → r) ∨ (u ∧ s) ∴ ¬t ∨ ¬u
+    </div>
     <div class="content">
         <div class="case-intro" style="opacity: 0.9; padding: 15px; border-left: 4px solid var(--ucv-accent); background: rgba(255,255,255,0.02);">
             <strong>Análisis Estratégico:</strong> Antes de probar empíricamente la invalidez de un argumento, es fundamental declarar qué estamos intentando lograr:<br><br>
@@ -335,6 +365,9 @@ export const advEx5Slide1 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 6: <span>Desafío de Simbolización (5.e) (1/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> r → ¬(p ∨ q), p ∨ t, ¬t ∧ s ∴ r → u
+    </div>
     <div class="content">
         <div class="grid-2">
             <div class="example-card">
@@ -382,6 +415,9 @@ export const advEx5Slide2 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 6: <span>Demostración (2/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> r → ¬(p ∨ q), p ∨ t, ¬t ∧ s ∴ r → u
+    </div>
     <div class="content">
         <div class="formal-code" style="padding: 15px;">
             <strong style="color:var(--ucv-accent);">Fase 1: Asumiendo el Absurdo y Extrayendo Variables</strong>
@@ -416,6 +452,9 @@ export const advEx5Slide3 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 6: <span>Demostración (3/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> r → ¬(p ∨ q), p ∨ t, ¬t ∧ s ∴ r → u
+    </div>
     <div class="content">
         <div class="formal-code" style="padding: 15px;">
             <strong style="color:var(--ucv-accent);">Fase 2: Derivación Técnica sobre la Premisa 1</strong>
@@ -446,6 +485,9 @@ export const advEx6Slide1 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 7: <span>Prueba de Inconsistencia (1/2)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> (t ∨ s) → ¬(p ∧ q), (t ∨ m) ∧ (p ∧ r), ¬s → q ∴ m ∧ r
+    </div>
     <div class="content">
         <div class="grid-2">
             <div class="concept-card">
@@ -476,6 +518,9 @@ export const advEx6Slide2 = `
 <div class="slide">
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 7: <span>Demostración (2/2)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> (t ∨ s) → ¬(p ∧ q), (t ∨ m) ∧ (p ∧ r), ¬s → q ∴ m ∧ r
+    </div>
     <div class="content">
         <div class="formal-code" style="padding: 15px;">
             <table class="formal-table">

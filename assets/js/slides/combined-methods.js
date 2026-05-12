@@ -35,6 +35,9 @@ export const combinedExSlide1 = `
 <div class="slide">
     <div class="section-tag">Sección 4: Práctica Avanzada</div>
     <h2 class="slide-title">Ejercicio 8: <span>Métodos Combinados (1/2)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> (p ∧ q) → r, (r ∨ s) → t, p ∧ ¬t ∴ ¬q
+    </div>
     <div class="content">
         <div class="grid-2">
             <div class="concept-card">
@@ -64,6 +67,9 @@ export const combinedExSlide2 = `
 <div class="slide">
     <div class="section-tag">Sección 4: Práctica Avanzada</div>
     <h2 class="slide-title">Ejercicio 8: <span>Análisis de Cierre (2/2)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> (p ∧ q) → r, (r ∨ s) → t, p ∧ ¬t ∴ ¬q
+    </div>
     <div class="content">
         <div class="formal-code" style="padding: 10px 15px;">
             <strong style="color:var(--ucv-accent);">Observa los "niveles" de profundidad en los colores</strong>
@@ -101,6 +107,9 @@ export const combinedEx2Slide1 = `
 <div class="slide">
     <div class="section-tag">Sección 4: Práctica Avanzada</div>
     <h2 class="slide-title">Ejercicio 9: <span>Estructura Preliminar (1/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> (p ∧ q) → (r ∨ s), t → (r ∨ u), (s ∨ u) → v, p ∧ t, q ∧ ¬v ∴ r
+    </div>
     <div class="content">
         <div class="grid-2">
             <div class="concept-card">
@@ -131,6 +140,9 @@ export const combinedEx2Slide2 = `
 <div class="slide">
     <div class="section-tag">Sección 4: Práctica Avanzada</div>
     <h2 class="slide-title">Ejercicio 9: <span>Sub-demostración (2/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> (p ∧ q) → (r ∨ s), t → (r ∨ u), (s ∨ u) → v, p ∧ t, q ∧ ¬v ∴ r
+    </div>
     <div class="content">
         <div class="formal-code" style="padding: 12px;">
             <strong style="color:var(--ucv-accent);">Fase 1: Derivación del Condicional Auxiliar</strong>
@@ -167,6 +179,9 @@ export const combinedEx2Slide2 = `
 export const combinedEx2Slide3 = `
 <div class="slide">
     <h2 class="slide-title">Ejercicio 9: <span>Conclusión Final (3/3)</span></h2>
+    <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
+        <strong>Argumento:</strong> (p ∧ q) → (r ∨ s), t → (r ∨ u), (s ∨ u) → v, p ∧ t, q ∧ ¬v ∴ r
+    </div>
     <div class="content">
         <div class="formal-code" style="padding: 15px; font-size: 16px;">
             <strong style="color:var(--ucv-accent);">Fase 2: Conclusión del Argumento</strong>

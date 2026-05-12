@@ -18,7 +18,7 @@ export const implicitCasesSlide = `
                 <p style="line-height: 1.6; color: var(--text-dim);">
                     Significa que siempre que tengas una premisa condicional (ej: ¬s ∧ ¬m → q), <strong>es completamente factible abrir una Prueba por Casos</strong>, evaluando:<br><br>
                     1) El caso donde el antecedente es falso (ej: ¬(¬s ∧ ¬m))<br>
-                    2) El caso donde el consecuente es verdadero (ej: $q$)<br><br>
+                    2) El caso donde el consecuente es verdadero (ej: <em>q</em>)<br><br>
                     <em>Nota: Saber ver "disyunciones ocultas" puede salvarte cuando la prueba directa se tranca.</em>
                 </p>
             </div>

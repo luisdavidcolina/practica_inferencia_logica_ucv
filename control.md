@@ -83,10 +83,17 @@ Documentar qué se ha hecho, qué falta y cualquier decisión importante sobre e
 - [x] **Orden Pedagógico:** Reestructurado el array maestro de diapositivas para eliminar saltos caóticos entre secciones (Flujo 1 -> 2 -> 3 -> 4).
 - [x] **Corrección de Módulos:** Renombrado "Módulo 4" a "Práctica Avanzada" y corregidas inconsistencias de nombres en la Sección 2.
 
+- [x] **Live Logic Sandbox (Simulador Valores de Verdad):** Implementación de un motor JavaScript 100% interactivo de tres estados lógicos (V, F, ?) para validar pruebas de invalidez en tiempo real.
+- [x] Aplicado el Simulador Lógico a las láminas de "Prueba de Invalidez" (teoría) y al "Ejercicio 5 (13.d)" (práctica avanzada).
+- [x] **Mejoras UX/UI y Anti-overflow:** Refactorización de tooltips dinámicos con auto-anclaje derecho (`.tip-left`) y división de las láminas de "Análisis Didáctico 1 y 2" en 4 partes para asegurar su visibilidad y prevenir solapamientos verticales en resoluciones estándar (720px).
+- [x] Agregado botón de descarga en "Catálogo de Leyes" con enlace hacia el PDF oficial en una nueva pestaña.
+- [x] **Ingeniería de Repositorio & SEO:** Renombramiento del archivo raíz a `index.html`, creación de `README.md` estructurado, archivo `.gitignore`, y un `<head>` SEO/OpenGraph completo optimizado para redes sociales, clarificando explícitamente el enfoque en "Clase Práctica 4".
+
 ## Notas
 - El deck actual está 100% orientado a la pedagogía, con "tips", prevenciones de errores y visualizaciones avanzadas. 
 - La arquitectura modular (JS por secciones) funciona perfectamente.
+- Los componentes interactivos (Sandbox) introducen una mecánica de *gamificación* educativa.
 - El proyecto está teóricamente completo para la unidad de Inferencia Lógica.
 
 ## Última actualización
-- 2026-05-11 (Estandarización de Secciones, Navegación Sincronizada, Principio de Explosión y Ordenamiento Lógico)
+- 2026-05-11 (Implementación de Sandboxes Lógicos, Optimización Anti-Overflow, SEO y Estructura Profesional de Repositorio)
