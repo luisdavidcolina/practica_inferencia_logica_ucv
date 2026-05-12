@@ -1,0 +1,128 @@
+Matem´ atica Discreta I Soluci´ on del Parcial 2 17/12/2025
+Universidad Central de Venezuela
+Facultad de Ciencias
+Nombre y apellido: Secci´ on:
+C´ edula de identidad: Profesor:
+Pregunta 1 2 3 4 5 Nota
+Puntos 4 3 4 4 5 20
+Resultado
+Importante: justifique detalladamente cada una de sus respuestas.
+1. (4 puntos) Sea el siguiente argumento: ”No hay nadie que sea sensible y no admire la pintura. Algunas personas no son
+sensibles. Si todos no admiran la pintura, algunos no son pintores. Por tanto, Juan no es sensible”. Sea el universo del
+discurso U={personas }. Defina cada uno de los predicados y simbolice el argumento con cada una de sus premisas y
+conclusi´ on.
+Soluci´ on: A continuaci´ on, se definen los siguientes predicados y se le designa la letra Ja Juan:
+A(x) :xadmira la pintura.
+S(x) :xes una persona sensible.
+P(x) :xes pintor.
+J: Juan.
+La simbolizaci´ on del argumento es la siguiente:
+¬[∃x: [S(x)∧ ¬A(x)]]
+∃x:¬S(x)
+∀x:¬A(x)→ ∃x:¬P(x)
+∴¬S(J)
+Tambi´ en se puede simbolizar el argumento de la siguiente manera:
+∀x: [S(x)→A(x)]
+∃x:¬S(x)
+∀x:¬A(x)→ ∃x:¬P(x)
+∴¬S(J)
+Escuela de Computaci´ on Semestre II-2025 Grupo docente de MDI2. (3 puntos) Sea el universo del discurso U=Z. Justificando su respuesta, diga cu´ al es el valor de verdad de la siguiente
+proposici´ on cuantificada:
+∀x: [x >3→x2<3]
+Demostraci´ on: Para que la propocisi´ on cuantificada ∀x: [x >3→x2<3] tenga valor de verdad falso,
+debemos encontrar, al menos, un elemento del universo U=Z, tal que el condicional x >3→x2<3 sea
+falso. Sea x= 4, observe que:
+4>3|{z}
+V→16<3|{z}
+F≡F
+Por tanto, la respuesta correcta es que la proposici´ on cuantificada ∀x: [x >3→x2<3] tiene valor de
+verdad falso.
+3. Sea el universo del discurso U={x1, x2, . . . , x n}y sean P(x) yQ(x) dos predicados definidos sobre U. Pruebe las siguientes
+equivalencias:
+(a) (2 puntos) ∃x: [P(x)∨Q(x)]≡ ∃x:P(x)∨ ∃x:Q(x)
+(b) (2 puntos) ∃x: [P(x)→Q(x)]≡ ∀x:P(x)→ ∃x:Q(x)
+Demostraci´ on: Sabemos que el universo del discurso es U={x1, x2, . . . , x n}. Por tanto,
+(a)∃x:P(x)∨Q(x)≡P(x1∨Q(x1)∨P(x2)∨Q(x2)∨ ··· ∨ P(xn)∨Q(xn) Def. de ∃
+≡[P(x1)∨P(x2)∨ ··· ∨ P(xn)]∨[Q(x1)∨Q(x2)∨ ··· ∨ Q(xn)] Conmu. y asoc. ∨
+≡ ∃x:P(x)∨ ∃x:Q(x) Def. de ∃
+(b)∃x: [P(x)→Q(x)]≡[P(x1)→Q(x1)]∨[P(x2)→Q(x2)]∨ ··· ∨ [P(xn)→Q(xn)] Def. de ∃
+≡ ¬P(x1)∨Q(x1)∨ ¬P(x2)∨Q(x2)∨ ··· ∨ ¬ P(xn)∨Q(xn) EPI
+≡[¬P(x1)∨ ¬P(x2)∨ ··· ∨ ¬ P(xn)]∨[Q(x1)∨Q(x2)∨ ··· ∨ Q(xn)] Conm. y Asoc. ∨
+≡ ¬[P(x1)∧P(x2)∧ ··· ∧ P(xn)]∨[Q(x1)∨Q(x2)∨ ··· ∨ Q(xn)] De Morgan ∧
+≡ ¬[∀x:P(x)]∨ ∃x:Q(x) Def. para ∀y∃
+≡ ∀x:P(x)→ ∃x:Q(x) EPI
+Otra desmotraci´ on alterna y m´ as corta es la siguiente:
+∃x: [P(x)→Q(x)]≡ ∃x: [¬P(x)∨Q(x)] EPI
+≡ ∃x:¬P(x)∨ ∃x:Q(x) Ley de equivalencia ∃
+≡ ¬[∀x:P(x)]∨ ∃x:Q(x) Negaci´ on de ∀
+≡ ∀x:P(x)→ ∃x:Q(x) EPI
+Escuela de Computaci´ on Semestre II-2025 Grupo docente de MDI4. (4 puntos) Sea Uun universo del discurso y a∈ U. Demuestre que el siguiente argumento es inv´ alido:
+F(a)→ ∀x:P(x)
+∃x:F(x)
+∃x: [P(x)→R(x)]
+∴∃x:R(x)
+De ser necesario, probar Ucon a lo sumo dos elementos.
+Escuela de Computaci´ on Semestre II-2025 Grupo docente de MDIDemostraci´ on: Recordemos que en este tipo de prueba que involucran proposiciones cuantificadas,
+debe existir, al menos, un universo del discurso con, al menos, un elemento que garantice que
+las premisas sean verdaderas y la conclusi´ on falsa. Por tanto, supongamos que el universo del
+discurso tiene un solo elemento, U={a}. Por ende, el argumento lo podemos escribir de la
+siguiente manera:
+F(a)→P(a)
+F(a)
+P(a)→R(a)
+∴R(a)(1)
+Observe que el argumento (1) siempre ser´ a v´ alido indiferentemente del valor de verdad que tenga cada
+una de las proposiciones simples que lo componen. Debemos definir un nuevo universo del discurso, ahora
+con dos elementos, U={a, b}. Por tanto, podemos escribir el argumento inicial como:
+F(a)→P(a)∧P(b)
+F(a)∨F(b)
+[P(a)→R(a)]∨[P(b)→R(b)]
+∴R(a)∨R(b)(2)
+Para que (2) sea un argumento inv´ alido veamos el siguiente an´ alisis referente a los valores de verdad de
+sus proposiciones simples. Para que la conlusi´ on sea falsa tanto el valor de verdad de R(a) yR(b) deben
+ser falsos. Para que la premisa 3 sea verdadera, no debe ocurrir que los valores de verdad de P(a) y
+P(b) sean verdaderos simultaneamente, es decir, pueden ser simultaneamente falsos o diferentes. Esto
+nos permite afirmar que el valor de verdad de la conclusi´ on de la proposici´ on condicional de la premisa
+1 es falso y que el valor de verdad del antecedente, F(a), es falso. Por tanto, el valor de verdad de F(b)
+es verdadero para que la premisa 2 sea verdadera. Por tanto, podemos decir que el argumento (2) es
+inv´ alido porque hay, al menos, una combinaci´ on de valores de verdad que garantizan que las premisas
+sean verdaderas y la conclusi´ on sea falsa. Los valores de verdad de las proposiciones son los siguientes:
+F(a)F(b)P(a)P(b)R(a)R(b)
+F V V F F F
+Por tanto, de todo lo anterior expuesto, podemos decir que el argumento incial es inv´ alido.
+Observaci´ on: En el an´ alisis previo se pudo deducir que los valores de verdad de las P(a) yP(b) no
+pueden ser simultaneamente verdadderos. Esto nos permite decir que hay otras dos (2) combinaciones
+de valores de verdad que garantizan que (2) sea inv´ alido. Estas combinaciones de valores de verdad son
+las siguientes:
+F(a)F(b)P(a)P(b)R(a)R(b)
+F V F V F F
+F V F F F F
+Escuela de Computaci´ on Semestre II-2025 Grupo docente de MDI5. (5 puntos) Demuestre la validez del siguiente argumento utilizando el m´ etodo de argumentaci´ on directa:
+∃x: [Q(x)∧ ¬S(x)]
+∀x: [P(x)→S(x)]
+∃x: [P(x)∨S(x)]
+∴¬[∃x:S(x)→ ∀x:P(x)]
+Demostraci´ on: Utilizando el m´ etodo de argumentaci´ on directa y sean aybdos elementos de U, veamos
+que:
+Paso Proposici´ on Justificaci´ on
+1 ∃x: [Q(x)∧ ¬S(x)] Premisa 1
+2 ∀x: [P(x)→S(x)] Premisa 2
+3 ∃x: [P(x)∨S(x)] Premisa 3
+4 Q(a)∧ ¬S(a) PE para x=aen 1
+5 ¬S(a) Simplificaci´ on en 4
+6 P(a)→S(a) PU para x=aen 2
+7 ¬P(a) Modus Tollens entre 5 y 6
+8 ∃x:¬P(x) GE en 7
+9 P(b)∨S(b) PE para x=ben 3
+10 ¬S(b)→P(b) Conmu. para ∨y EPI en 9
+11 P(b)→S(b) PU para x=ben 2
+12 ¬S(b)→S(b) Silogismo hipot´ etico entre 10 y 11
+13 S(b)∨S(b) EPI en 12
+14 S(b) Idempotencia para ∨en 13
+15 ∃x:S(x) GE en 14
+16 ∃x:S(x)∧ ∃x:¬P(x) conjunci´ on entre 15 y 5
+17 ¬[¬[∃x:S(x)]∨ ¬[∃x:¬P(x)]] De Morgan para ∨y doble negaci´ on
+18 ¬[∃x:S(x)→ ∀x:P(x)] EPI y negaci´ on de ∀
+Comentario: Observe que se realizaron dos particularizaciones existenciales (para la premisa 1 y para
+la premisa 3) para dos elementos distintos ayb.
+Escuela de Computaci´ on Semestre II-2025 Grupo docente de MDI

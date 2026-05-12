@@ -1,0 +1,138 @@
+:root {
+    --bg-dark: #0b0f12;
+    --bg-accent: #12181d;
+    --text-main: #f7fbff;
+    --ucv-accent: #c8f07a;
+    --text-dim: #c2ced6;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background:
+        radial-gradient(circle at top right, rgba(200, 240, 122, 0.08), transparent 32%),
+        linear-gradient(180deg, #10161b 0%, #0b0f12 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#slides-root {
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    transform-origin: center center;
+    transition: transform 0.2s ease-out;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+}
+
+.slide {
+    width: 1280px;
+    height: 720px;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    position: relative;
+    overflow: hidden;
+    padding: 46px 54px 50px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+}
+
+.slide::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(200, 240, 122, 0.07) 0%, transparent 70%);
+}
+
+.slide-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-left: 6px solid var(--ucv-accent);
+    padding-left: 25px;
+    white-space: nowrap;
+}
+
+.slide-title-cases {
+    font-size: 42px;
+    line-height: 1.15;
+}
+
+.slide-title span { color: var(--ucv-accent); }
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h1 { font-size: 90px; text-align: center; }
+
+.formula {
+    background: #0a1014;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: var(--ucv-accent);
+    white-space: nowrap;
+}
+
+/* Interactive Hover Effects for Base Elements */
+.slide-title, h1, .formula {
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: default;
+    display: inline-block; /* Helps with scaling boundaries without shifting layout */
+}
+
+.slide-title {
+    display: block; /* Overrides inline-block to preserve width */
+}
+
+.slide-title:hover, h1:hover, .formula:hover {
+    transform: scale(1.02);
+}
+
+:root {
+    --ucv-accent-rgb: 200, 240, 122;
+}
+
+.section-tag {
+    position: absolute;
+    top: 30px;
+    right: 54px;
+    background: rgba(var(--ucv-accent-rgb), 0.12);
+    color: var(--ucv-accent);
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border: 1px solid rgba(var(--ucv-accent-rgb), 0.25);
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+}
+

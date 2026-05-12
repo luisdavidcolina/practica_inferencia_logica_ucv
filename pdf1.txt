@@ -1,0 +1,128 @@
+Matem´ atica Discreta I Soluci´ on-Parcial I 09/05/2025
+Universidad Central de Venezuela
+Facultad de Ciencias
+Nombre y apellido: Secci´ on:
+C´ edula de identidad: Profesor:
+Pregunta 1 2 3 4 Nota
+Puntos 6 5 4 5 20
+Resultado
+1. (6 puntos) Parte I: Verdadero o falso . En cada ´ ıtems indique si es verdadero (V) o falso (F) rellenando el c´ ırculo
+correspondiente. Dos respuestas incorrectas eliminan una buena y un enunciado sin respuesta no quita puntos .
+Si no est´ a seguro de la respuesta, lo recomendable es que no la conteste. Cada ´ ıtem tiene una poderaci´ on de 1,2 puntos.
+a) El siguiente argumento es v´ alido: ”Si voy a la UCV,
+tengo clases. No aprobar´ e la materia a menos que
+estudie. Voy a la UCV o estudiar´ e. En consecuencia,
+tengo clases o apruebo la materia”.
+Verdadero ⃝ Falso⊛
+b) Una proposici´ on es una contingencia si ella es verdadera
+para unas combinaciones de valores de verdad y falsa
+para otras.
+Verdadero ⊛ Falso⃝
+c) La proposici´ on ”Voy a jugar f´ utbol si no llueve” no es
+equivalente a la proposici´ on ”Si no voy a jugar f´ utbol,
+llueve”.
+Verdadero ⃝ Falso⊛d) Un conjunto de premisas ser´ an consistentes si existe una
+combinaci´ on de valores de verdad de las proposiciones
+simples presentes en el argumento, tal que todas las
+premisas sean verdaderas al mismo tiempo.
+Verdadero ⊛ Falso⃝
+e) La prueba de validez busca hallar una combinaci´ on de
+valores de verdad para las proposiciones simples tal que
+las premisas sean verdaderas y la conclusi´ on sea falsa.
+Verdadero ⃝ Falso⊛
+Escuela de Computaci´ on Semestre I-2025 Grupo docente de MDIJustificaci´ on de cada ´ ıtem:
+a)Definimos las siguientes proposiciones simples:
+p: ”Voy a la UCV”.
+q: ”Tengo clases”.
+r: ”Aprobar´ e la materia”.
+s: ”Estudiar´ e”.
+La simbolizaci´ on del argumento es la seguiente:
+p→q
+r→s
+p∨s
+∴q∨r
+El argumento anterior es inv´ alido. Para que un argumento sea inv´ alido, debemos conseguir una
+combinaci´ on de valores de verdad de las proposiciones simples donde la conjunci´ on de todas las premisas
+sean verdaderas y la conclusi´ on sea falsa. Estos valores son los siguientes:
+pqrs
+FFFV
+En consecuencia, la respuesta correcta es falso.
+b)Recordemos que una proposici´ on es una contingencia si ella no es una tautolog´ ıa ni una con-
+tradicci´ on. Eso quiere decir que existen combinanciones de valores de verdad de las proposiciones simples
+que componen a esta proposici´ on que garantizan que esta ´ ultima tenga valores de verdad verdaderos (al
+menos uno o m´ as) y valores de verdad falso (al menos uno o m´ as). Por tanto, la respuesta correcta es
+verdadera.
+c)Definimos las siguientes proposiciones simples:
+p: ”Voy a jugar f´ utbol”.
+q: ”Est´ a lloviendo”.
+La primera proposici´ on la podemos simbolizar: ¬q→p. La segunda se simboliza de la siguiente manera:
+¬p→q. Por las leyes de equivalencias de contraposici´ on y doble negaci´ on se tiene que esas proposiciones
+son equivalentes, es decir, ¬q→p≡ ¬p→q. Por tanto, la respuesta correcta es falso.
+d)Esta es la definici´ on de premisas consistentes. Por tanto, la respuesta correcta es verdadera.
+e)Esta es la definici´ on de argumento inv´ alido. Por ende, la respuesta correcta es falso.
+Escuela de Computaci´ on Semestre I-2025 Grupo docente de MDIParte II: Desarrollo.
+2. (5 puntos) Para el siguiente circuito, encuentre la proposici´ on l´ ogica asociada y simplif´ ıquela:
+q tp
+¬q rp
+r¬tp
+Soluci´ on:
+(p∨q∨r)∧(p∨t∨ ¬q)∧(p∨ ¬t∨r) Justificaci´ on
+≡p∨[(q∨r)∧(t∨ ¬q)∧(¬t∨r)] Distributiva para ∨
+≡p∨[(q∨r)∧(¬t∨r)∧(t∨ ¬q)] Conmutativa para ∧
+≡p∨[[(q∧ ¬t)∨r]∧(t∨ ¬q)] Distributiva para ∨
+≡p∨[[(q∧ ¬t)∨r]∧ ¬(¬t∧q)] De Morgan para ∧y doble negaci´ on
+≡p∨[[(q∧ ¬t)∧ ¬(q∧ ¬t)]∨[¬(q∧ ¬t)∧r]] Distributiva y conmutativa para ∧
+≡p∨[F∨[(¬q∨ ¬(¬t))∧r]] Contradicci´ on y De Morgan para ∧
+≡p∨[(¬q∨t)∧r] Identidad para ∨y doble negaci´ on
+Escuela de Computaci´ on Semestre I-2025 Grupo docente de MDI3. (4 puntos) Utilizando el m´ etodo de argumentaci´ on directa, pruebe la inconsistencia de las siguientes premisas:
+p1:p∧q
+p2:p→ ¬r
+p3: (¬r∧s)→ ¬q
+p4:q→s
+Demostraci´ on: Recuerde que un conjunto de premisas p1, p2, . . . , p nson inconsistentes si la proposici´ on
+p1∧p2∧ ··· ∧ pn| {z }
+Falso→C|{z}
+Falso(1)
+es una tautolog´ ıa, donde Ces una contradicci´ on, es decir, Ctiene valor de verdad falso, C≡F. Por
+tanto, para que (1) sea una tautolog´ ıa se debe cumplir que la proposici´ on p1∧p2∧ ··· ∧ pn≡F. Por
+tanto, basta con realizar una prueba de validez y llegar a una contradicci´ on.
+Ahora, utilizando en m´ etodo de argumentaci´ on directa, se tiene que:
+Paso Proposici´ on Justificaci´ on
+1 p∧q Premisa 1
+2 p→ ¬r Premisa 2
+3 (¬r∧s)→ ¬q Premisa 3
+4 q→s Premisa 4
+5 p Simplificaci´ on en 1
+6 ¬r Modus ponens entre 5 y 2
+7 q Simplificaci´ on en 1
+8 ¬(¬r∧s) Modus tollens entre 7 y 3
+9 r∨ ¬s Morgan para ∧y doble negaci´ on en 8
+10 s→r Conmutativa para ∨y EPI en 9
+11 q→r Silogismo hipot´ etico entre 4 y 10
+13 r Modus ponens entre 7 y 11
+14 ¬r∧r Conjunci´ on entre 6 y 13, contradicci´ on
+EPI: Equivalencia para la implicaci´ on.
+Escuela de Computaci´ on Semestre I-2025 Grupo docente de MDI4. (5 puntos) Demuestre la validez del siguiente argumento utilizando la prueba por casos:
+¬f∨[(g∧h)∨ ¬(g∨h)]
+(g→h)→[(h→g)→i]
+∴¬f∨i
+Demostraci´ on:
+Pasos Proposici´ on Justificaci´ on
+1 ¬f∨[(g∧h)∨ ¬(g∨h)] Premisa 1
+2 (g→h)→[(h→g)→i] Premisa 2
+3 ¬f Prueba por casos en 1
+4 ¬f∨i Adici´ on en 3
+5 (g∧h)∨ ¬(g∨h) Prueba por casos en 1
+6 (g∧h)∨(¬g∧ ¬h) Morgan para ∨en 5
+7 [(g∧h)∨ ¬g]∧[(g∧h)∨ ¬h] Distributiva para ∨en 6
+8 [(g∨ ¬g)∧(h∨ ¬g)]∧[(g∨ ¬h)∧(h∨ ¬h)] Distributiva para ∨en 7
+9 [V∧(¬g∨h)]∧[(¬h∨g)∧V] Tercer exclu´ ıdo y conmutativa para ∨en 8
+10 (g→h)∧(h→g) Ley de identidad para ∧y EPI en 9
+11 g→h Simplificaci´ on en 10
+12 (h→g)→i Modus ponens entre 2 y 11
+13 h→g Simplificaci´ on en 10
+14 i Modus ponens entre 12 y 13
+15 ¬f∨i Adici´ on y conmutativa en 14
+EPI: Equivalencia para la implicaci´ on.
+Pregunta: ¿Es posible aplicar en el paso 5 nuevamente la prueba por casos?
+Escuela de Computaci´ on Semestre I-2025 Grupo docente de MDI
