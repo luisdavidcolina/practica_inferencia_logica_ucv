@@ -141,6 +141,27 @@
     padding: 30px 45px 35px !important;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    #slides-root,
+    .slide-title,
+    h1,
+    .formula,
+    .validity-visual,
+    .case-def,
+    .logic-row,
+    .formal-table tbody tr,
+    .logic-table tbody tr {
+        transform: none !important;
+    }
+}
+
 .logic-table td, .logic-table th {
     padding: 4px 10px !important;
 }
@@ -316,46 +337,19 @@ p, .text, .case-intro, .flow-text, .example-side p, .guide-card li {
 }
 
 [title]:after {
-    content: attr(title);
-    position: absolute;
-    bottom: 135%;
-    left: 50%;
-    transform: translateX(-50%) scale(0);
-    background: var(--ucv-accent);
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-weight: bold;
-    white-space: nowrap;
-    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    pointer-events: none;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
-    opacity: 0;
-    z-index: 1001;
+    display: none !important;
 }
 
 [title]:hover:after {
-    transform: translateX(-50%) scale(1);
-    opacity: 1;
+    display: none !important;
 }
 
 [title]:before {
-    content: "";
-    position: absolute;
-    bottom: 120%;
-    left: 50%;
-    transform: translateX(-50%) scale(0);
-    border: 10px solid transparent;
-    border-top-color: var(--ucv-accent);
-    transition: all 0.2s ease;
-    pointer-events: none;
-    opacity: 0;
-    z-index: 1001;
+    display: none !important;
 }
 
 [title]:hover:before {
-    transform: translateX(-50%) scale(1);
-    opacity: 1;
+    display: none !important;
 }
 
 /* Evitar que tooltips anidados se pisen (ej. conector dentro de premisa) */

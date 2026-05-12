@@ -205,7 +205,7 @@ export const raaSlide = `
                 <tr><td>5</td><td>p</td><td><span title="Extraemos 'p' mediante Simplificación. Esta variable es la 'llave' específica necesaria para activar la cadena de condicionales de las premisas originales.">Simplificación en 4</span></td></tr>
                 <tr><td>6</td><td>¬r</td><td><span title="Extraemos '¬r' mediante Simplificación. Reservamos este término para el final de la prueba, donde servirá como el componente de choque para generar la contradicción.">Simplificación en 4</span></td></tr>
                 <tr><td>7</td><td>q</td><td><span title="Ejecutamos Modus Ponens en la Premisa 1 usando la llave 'p' que extrajimos, avanzando en nuestra búsqueda de una inconsistencia.">Modus Ponens entre 1 y 5</span></td></tr>
-                <tr><td>8</td><td>r</td><td><span title="Ejecutamos Modus Ponens en la Premisa 2 usando 'q'. Obtenemos 'r', que es la afirmación opuesta a lo que extrajimos en el paso 6.">Modus Ponens entre 2 and 7</span></td></tr>
+                <tr><td>8</td><td>r</td><td><span title="Ejecutamos Modus Ponens en la Premisa 2 usando 'q'. Obtenemos 'r', que es la afirmación opuesta a lo que extrajimos en el paso 6.">Modus Ponens entre 2 y 7</span></td></tr>
                 <tr><td>9</td><td>r ∧ ¬r</td><td><span title="Unimos 'r' (paso 8) con su negación '¬r' (paso 6) mediante Conjunción. Al afirmar una cosa y su contraria, formalizamos el Absurdo (F) que invalida el supuesto inicial.">Conjunción (Contradicción)</span></td></tr>
                 <tr><td>10</td><td>p → r</td><td><span title="Rechazamos el supuesto por ser lógicamente insostenible y validamos la meta original. Este paso cierra el RAA y confirma la validez del argumento.">Cierre RAA (3-9)</span></td></tr>
             </tbody>

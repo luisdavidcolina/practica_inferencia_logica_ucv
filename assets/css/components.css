@@ -627,12 +627,26 @@ th:hover, .case-formula:hover, .formal-code-main:hover, .concept-tag:hover, .cas
     bottom: 125%;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
-    width: 340px; /* Slightly wider for better text flow */
-    background: #05080f; /* 100% Solid dark background */
+    width: 420px;
+    max-width: min(420px, 88vw);
+    background: #000000 !important;
+    background-color: #000000 !important;
+    background-image: none !important;
+    background-clip: padding-box;
     color: #ffffff;
+    text-shadow:
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000,
+        0 -1px 0 #000000,
+        0 1px 0 #000000,
+        -1px 0 0 #000000,
+        1px 0 0 #000000,
+        0 0 4px #000000 !important;
     padding: 16px 20px;
     border-radius: 14px;
-    border: 2px solid var(--ucv-accent); /* Added visible border for separation */
+    border: 2px solid #d7f46a;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.6;
@@ -641,8 +655,13 @@ th:hover, .case-formula:hover, .formal-code-main:hover, .concept-tag:hover, .cas
     z-index: 10000; /* Extremely high z-index */
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+    transition: transform 0.15s ease, visibility 0s linear 0.15s;
+    box-shadow: 0 0 0 2px #d7f46a;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    mix-blend-mode: normal;
+    isolation: isolate;
+    overflow: hidden;
     pointer-events: none;
 }
 
@@ -653,10 +672,10 @@ th:hover, .case-formula:hover, .formal-code-main:hover, .concept-tag:hover, .cas
     left: 50%;
     transform: translateX(-50%) translateY(10px);
     border: 10px solid transparent;
-    border-top-color: var(--ucv-accent); /* Arrow color matches border */
+    border-top-color: #000000; /* Arrow color matches border */
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0.3s;
     z-index: 10001;
     pointer-events: none;
 }
@@ -668,6 +687,33 @@ th:hover, .case-formula:hover, .formal-code-main:hover, .concept-tag:hover, .cas
     transform: translateX(-50%) translateY(0);
 }
 
+.has-tip:hover::after,
+.has-tip:hover::before {
+    transition-delay: 0s;
+}
+
+.has-tip:hover::after {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    background-image: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    opacity: 1 !important;
+}
+
+.has-tip,
+.has-tip:hover {
+    opacity: 1 !important;
+    color: inherit !important;
+    transform: none !important;
+}
+
+.has-tip::after,
+.has-tip:hover::after {
+    outline: 1px solid #d7f46a;
+    outline-offset: 0;
+}
+
 /* Specific adjustment for tooltips near the top of the screen */
 .slide:first-child .has-tip::after {
     bottom: auto;
@@ -677,7 +723,7 @@ th:hover, .case-formula:hover, .formal-code-main:hover, .concept-tag:hover, .cas
     bottom: auto;
     top: 110%;
     border-top-color: transparent;
-    border-bottom-color: rgba(15, 23, 42, 0.98);
+    border-bottom-color: #000000;
 }
 
 /* Modifier for tooltips on the right edge of the screen to prevent overflow */
@@ -831,6 +877,15 @@ th:hover, .case-formula:hover, .formal-code-main:hover, .concept-tag:hover, .cas
 .var-toggle:hover {
     transform: scale(1.05);
     background: rgba(255, 255, 255, 0.1);
+}
+
+.var-toggle:focus-visible,
+.reveal-eye-btn-mini:focus-visible,
+#nav-controls button:focus-visible,
+#go-to-index:focus-visible {
+    outline: 3px solid var(--ucv-accent);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 4px rgba(200, 240, 122, 0.18);
 }
 
 .var-toggle[data-val="V"] {

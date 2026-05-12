@@ -23,8 +23,8 @@ export const consistencySlide = `
                 <tr title="Premisa de entrada"><td>3</td><td>p ∧ ¬r</td><td>Premisa 3</td></tr>
                 <tr title="Extracción por Simplificación"><td>4</td><td>p</td><td>Simplificación en 3</td></tr>
                 <tr title="Extracción por Simplificación"><td>5</td><td>¬r</td><td>Simplificación en 3</td></tr>
-                <tr title="Deducción por Modus Ponens"><td>6</td><td>q</td><td>Modus Ponens entre 1 and 4</td></tr>
-                <tr title="Deducción por Modus Ponens"><td>7</td><td>r</td><td>Modus Ponens entre 2 and 6</td></tr>
+                <tr title="Deducción por Modus Ponens"><td>6</td><td>q</td><td>Modus Ponens entre 1 y 4</td></tr>
+                <tr title="Deducción por Modus Ponens"><td>7</td><td>r</td><td>Modus Ponens entre 2 y 6</td></tr>
                 <tr title="Evidencia de Inconsistencia" style="background: rgba(255,120,120,0.1);"><td>8</td><td><strong style="color:#ff7878;">r ∧ ¬r</strong></td><td style="color:#ff7878;">Conjunción (¡CONTRADICCIÓN!)</td></tr>
             </tbody>
         </table>

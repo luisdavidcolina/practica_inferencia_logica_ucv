@@ -43,7 +43,7 @@ export const explosionSlide = `
     <h2 class="slide-title">Principio de Explosión: <span>Ex Falso Quodlibet</span></h2>
     <div class="content">
         <div class="case-intro">
-            ¿Qué sucede cuando llegamos a un <strong>Absurdo (F)</strong>? En lógica formal, una vez que has demostrado una contradicción absoluta, el sistema te otorga una "llave maestra": puedes derivar <strong>cualquier cosa</strong> de forma directa.
+            ¿Qué sucede cuando llegamos a un <strong>Absurdo (F)</strong>? En lógica formal, una vez que has demostrado una contradicción, el sistema permite derivar <strong>cualquier proposición</strong> de forma directa.
         </div>
         
         <div class="grid-2">
@@ -67,12 +67,12 @@ export const explosionSlide = `
                             <tr>
                                 <td style="text-align:center;">2</td>
                                 <td><strong>F</strong></td>
-                                <td style="color:var(--text-dim);"><span title="La conjunción de una proposición con su negación (¬p) define formalmente el valor Falso o Absurdo. Funciona como un 'atajo simbólico' que representa el colapso de la consistencia del sistema lógico tras el Paso 1.">Definición de Absurdo (1)</span></td>
+                                <td style="color:var(--text-dim);"><span title="La conjunción de una proposición con su negación (¬p) define formalmente el valor Falso o Absurdo. Representa el colapso de la consistencia del sistema lógico tras el Paso 1.">Definición de Absurdo (1)</span></td>
                             </tr>
                             <tr style="background: rgba(var(--ucv-accent-rgb), 0.05);">
                                 <td style="text-align:center;">3</td>
                                 <td><strong>q ∧ ¬q</strong></td>
-                                <td style="color:var(--text-dim);"><span title="En lógica clásica (Principio de Explosión), una vez alcanzado el Falso, el sistema permite construir cualquier otra contradicción arbitraria 'q'. Esto opera como un puente para 'infectar' variables que antes eran inaccesibles.">Infección Lógica (2)</span></td>
+                                <td style="color:var(--text-dim);"><span title="En lógica clásica (Principio de Explosión), una vez alcanzado el Falso, el sistema permite construir cualquier otra proposición arbitraria 'q'. Esto funciona como un puente para extender la derivación.">Derivación por Explosión (2)</span></td>
                             </tr>
                             <tr style="background: rgba(var(--ucv-accent-rgb), 0.1);">
                                 <td style="text-align:center;">4</td>
@@ -83,7 +83,7 @@ export const explosionSlide = `
                     </table>
                 </div>
                 <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.8; line-height: 1.5;">
-                    Esta estructura demuestra que si el sistema admite un solo falso, la barrera de la verdad se rompe y permite validar <strong>cualquier</strong> proposición <em>q</em> que se nos ocurra.
+                    Esta estructura demuestra que, si el sistema admite una sola contradicción, es posible validar <strong>cualquier</strong> proposición <em>q</em> a partir de ella.
                 </p>
             </div>
         </div>
@@ -96,7 +96,7 @@ export const dilemmaTipSlide = `
     <h2 class="slide-title">Nota de la Cátedra (UCV): <span>Dilema Constructivo</span></h2>
     <div class="content">
         <div class="case-intro" style="margin-bottom: 15px;">
-            El <strong>Dilema Constructivo</strong> permite transferir una disyunción o conjunción de causas hacia sus respectivos efectos.
+            El <strong>Dilema Constructivo</strong> permite transferir una disyunción de causas hacia sus respectivos efectos.
         </div>
         <div class="grid-2">
             <div class="concept-card">
@@ -119,7 +119,7 @@ export const dilemmaTipSlide = `
             </div>
         </div>
         <div class="note-bar" style="margin-top: 20px; font-style: italic;">
-            <strong>Tip de examen:</strong> Esta segunda forma es vital para "empaquetar" premisas condicionales antes de una conjunción final.
+                    <strong>Tip de examen:</strong> Esta segunda forma es útil para combinar premisas condicionales antes de una conclusión conjunta.
         </div>
     </div>
 </div>`;

@@ -89,7 +89,7 @@ export const advEx1Slide3 = `
                     <tr><td style="text-align:center;">9</td><td>r ∧ s</td><td style="color:var(--text-dim);"><span title="Ejecutamos el Modus Ponens en la Premisa 1 usando la 'llave' (p ∨ q) que construimos. Esto nos entrega la conjunción (r ∧ s), ampliando nuestra base de verdades derivadas.">Modus ponens entre 1 y 8</span></td></tr>
                     <tr><td style="text-align:center;">10</td><td>r</td><td style="color:var(--text-dim);"><span title="Simplificamos para obtener 'r', que es el componente base necesario para, tras una adición, activar la Premisa 2 y acercarnos a la contradicción final.">Simplificación en 9</span></td></tr>
                     <tr><td style="text-align:center;">11</td><td>r ∨ t</td><td style="color:var(--text-dim);"><span title="Aplicamos Adición sobre 'r' para construir (r ∨ t). Este paso es el puente final hacia la Premisa 2, demostrando cómo una verdad simple se expande para cumplir requisitos complejos.">Adición en 10</span></td></tr>
-                    <tr><td style="text-align:center;">12</td><td>¬w ∧ x</td><td style="color:var(--text-dim);"><span title="Resolvemos la Premisa 2 mediante Modus Ponens. Al haber validado su antecedente complejo en el paso anterior, el sistema libera la información (¬w ∧ x).">Modus ponens entre 2 and 11</span></td></tr>
+                    <tr><td style="text-align:center;">12</td><td>¬w ∧ x</td><td style="color:var(--text-dim);"><span title="Resolvemos la Premisa 2 mediante Modus Ponens. Al haber validado su antecedente complejo en el paso anterior, el sistema libera la información (¬w ∧ x).">Modus ponens entre 2 y 11</span></td></tr>
                     <tr><td style="text-align:center;">13</td><td><strong>¬w</strong></td><td style="color:var(--text-dim);"><span title="Extraemos ¬w por Simplificación. Este es el momento crítico donde obtenemos la negación de nuestro supuesto inicial, preparando el cierre formal del Absurdo.">Simplificación en 12</span></td></tr>
                     <tr><td style="text-align:center;">14</td><td><strong style="color:#ff7878;">w ∧ ¬w</strong></td><td style="color:var(--text-dim);"><span title="Unimos el supuesto original (paso 4) con su negación derivada (paso 13) mediante la regla de Conjunción. Al afirmar que algo es V y F al mismo tiempo, formalizamos la contradicción (F).">Conjunción entre 4 y 13, contradicción</span></td></tr>
                     <tr style="border-top: 1px dashed rgba(255,255,255,0.3); background: rgba(255,255,255,0.05);"><td style="text-align:center; padding: 10px 0;">15</td><td style="padding: 10px 0;">∴ <strong>¬w</strong></td><td style="color:var(--ucv-accent); padding: 10px 0;"><span title="Como suponer 'w' rompe la consistencia del sistema (Paso 14), la lógica nos obliga a aceptar que 'w' es falso, validando así la conclusión original ¬w.">RAA (Suposición en paso 4 rechazada)</span></td></tr>
@@ -206,29 +206,26 @@ export const advEx3Slide1 = `
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 4: <span>Prueba Condicional (6.d) (1/3)</span></h2>
     <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
-        <strong>Argumento:</strong> d → (a ∨ c), d ∧ ¬a ∴ c
+        <strong>Argumento:</strong> d → (a ∨ c), d ∧ ¬a ∴ d → c
     </div>
     <div class="content">
         <div class="grid-2">
             <div class="concept-card">
                 <h3 style="color:var(--ucv-accent)">Argumento</h3>
                 <div class="formal-code" style="padding: 15px; margin-top: 5px;">
-                    1. c ∨ (t → n)<br>
-                    2. ¬c ↔ (¬o ∨ a)<br>
-                    3. h ∨ m<br>
-                    4. h → (t ∧ a)<br>
-                    5. m → (¬a ∧ ¬t)<br>
+                    1. d → (a ∨ c)<br>
+                    2. d ∧ ¬a<br>
                     <div style="border-top: 1px solid rgba(255,255,255,0.2); margin: 10px 0;"></div>
-                    ∴ <strong>h → n</strong> 
+                    ∴ <strong>d → c</strong> 
                 </div>
             </div>
             
             <div class="example-card">
                 <h3 style="color:var(--ucv-accent)">Análisis Estratégico</h3>
                 <p style="line-height: 1.5; opacity: 0.9;">
-                    La clave absoluta de este ejercicio está en su conclusión: es un condicional (<strong>h → n</strong>). El camino más orgánico es la <em>Prueba Condicional</em>, que nos permite asumir <strong>h</strong> como premisa temporal.<br><br>
-                    Si analizamos las premisas, vemos que la <strong>Premisa 4</strong> tiene a "h" como antecedente. Al detonarla, obtendremos <strong>t</strong> y <strong>a</strong>.<br><br>
-                    Luego, podemos usar esa <strong>a</strong> para interactuar con la <strong>Premisa 2</strong> (vía Adición) y descubrir el valor de <strong>¬c</strong>. Finalmente, esa ¬c será la llave para desarmar la <strong>Premisa 1</strong> mediante un Silogismo Disyuntivo, dejándonos vía libre para alcanzar nuestra anhelada <strong>n</strong>.
+                    La meta ahora es un condicional (<strong>d → c</strong>), así que la herramienta correcta es la <em>Prueba Condicional</em>. Asumimos <strong>d</strong> y tratamos de derivar <strong>c</strong>.<br><br>
+                    La Premisa 2 nos da simultáneamente <strong>d</strong> y <strong>¬a</strong>. Con el supuesto <strong>d</strong>, activamos la Premisa 1 y obtenemos la disyunción <strong>a ∨ c</strong>.<br><br>
+                    Luego, al combinar <strong>a ∨ c</strong> con <strong>¬a</strong>, eliminamos la primera opción y llegamos a <strong>c</strong>. Con eso cerramos la prueba condicional.
                 </p>
             </div>
         </div>
@@ -240,7 +237,7 @@ export const advEx3Slide2 = `
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 4: <span>Demostración PC (2/3)</span></h2>
     <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
-        <strong>Argumento:</strong> d → (a ∨ c), d ∧ ¬a ∴ c
+        <strong>Argumento:</strong> d → (a ∨ c), d ∧ ¬a ∴ d → c
     </div>
     <div class="content">
         <div class="formal-code" style="padding: 15px;">
@@ -254,19 +251,18 @@ export const advEx3Slide2 = `
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td style="text-align:center;">1</td><td>c ∨ (t → n)</td><td style="color:var(--text-dim);">Premisa 1</td></tr>
-                    <tr><td style="text-align:center;">2</td><td>¬c ↔ (¬o ∨ a)</td><td style="color:var(--text-dim);">Premisa 2</td></tr>
-                    <tr><td style="text-align:center;">3</td><td>h ∨ m</td><td style="color:var(--text-dim);">Premisa 3</td></tr>
-                    <tr><td style="text-align:center;">4</td><td>h → (t ∧ a)</td><td style="color:var(--text-dim);">Premisa 4</td></tr>
-                    <tr><td style="text-align:center;">5</td><td>m → (¬a ∧ ¬t)</td><td style="color:var(--text-dim);">Premisa 5</td></tr>
-                    <tr style="background: rgba(255,255,255,0.05);"><td style="text-align:center;">6</td><td><strong style="color:var(--ucv-accent);">h</strong></td><td style="color:var(--ucv-accent);"><span title="Iniciamos la Prueba Condicional asumiendo el antecedente 'h' de nuestra meta (h → n). Este supuesto abre un entorno temporal donde exploraremos si la verdad de 'h' nos garantiza inevitablemente la obtención de 'n'.">Suposición PC</span></td></tr>
-                    <tr><td style="text-align:center;">7</td><td>t ∧ a</td><td style="color:var(--text-dim);"><span title="Ejecutamos la Premisa 4 mediante Modus Ponens aprovechando el supuesto 'h'. Esto nos entrega la conjunción (t ∧ a), proporcionando las variables atómicas necesarias para interactuar con el resto del sistema.">Modus ponens entre 4 y 6</span></td></tr>
-                    <tr><td style="text-align:center;">8</td><td>t</td><td style="color:var(--text-dim);"><span title="Extraemos 't' mediante Simplificación. Esta variable es fundamental porque funcionará como el antecedente específico requerido para resolver el condicional que aparecerá en la Premisa 1 más adelante.">Simplificación en 7</span></td></tr>
-                    <tr style="border-bottom: 1px dashed rgba(255,255,255,0.2);"><td style="text-align:center;">9</td><td>a</td><td style="color:var(--text-dim);"><span title="Extraemos 'a' mediante Simplificación. La necesitaremos para construir el bloque disyuntivo (¬o ∨ a) exigido por la bicondicional de la Premisa 2.">Simplificación en 7</span></td></tr>
+                    <tr><td style="text-align:center;">1</td><td>d → (a ∨ c)</td><td style="color:var(--text-dim);">Premisa 1</td></tr>
+                    <tr><td style="text-align:center;">2</td><td>d ∧ ¬a</td><td style="color:var(--text-dim);">Premisa 2</td></tr>
+                    <tr style="background: rgba(255,255,255,0.05);"><td style="text-align:center;">3</td><td><strong style="color:var(--ucv-accent);">d</strong></td><td style="color:var(--ucv-accent);"><span title="Asumimos el antecedente de la conclusión para abrir la Prueba Condicional.">Suposición PC</span></td></tr>
+                    <tr><td style="text-align:center;">4</td><td>d ∧ ¬a</td><td style="color:var(--text-dim);"><span title="Reutilizamos la premisa 2 dentro del contexto de la prueba condicional.">Premisa 2</span></td></tr>
+                    <tr><td style="text-align:center;">5</td><td>¬a</td><td style="color:var(--text-dim);"><span title="Simplificamos la conjunción para aislar la negación del antecedente secundario.">Simplificación en 4</span></td></tr>
+                    <tr><td style="text-align:center;">6</td><td>a ∨ c</td><td style="color:var(--text-dim);"><span title="Al contar con d, activamos la Premisa 1 mediante Modus Ponens.">Modus ponens entre 1 y 3</span></td></tr>
+                    <tr><td style="text-align:center;">7</td><td>c</td><td style="color:var(--text-dim);"><span title="Aplicamos Silogismo Disyuntivo: si a es falso, entonces debe valer c.">Silogismo disyuntivo entre 6 y 5</span></td></tr>
+                    <tr style="border-bottom: 1px dashed rgba(255,255,255,0.2);"><td style="text-align:center;">8</td><td>∴ <strong>d → c</strong></td><td style="color:var(--text-dim);"><span title="Si asumiendo d llegamos a c, entonces el condicional queda demostrado.">Cierre de la prueba condicional</span></td></tr>
                 </tbody>
             </table>
             <div style="margin-top: 15px; color: var(--text-dim); text-align: center;">
-                <em>(Ya tenemos herramientas: la letra <strong>t</strong> y la letra <strong>a</strong> sueltas)</em>
+                <em>(Al asumir d, la prueba produce c y cierra el condicional)</em>
             </div>
         </div>
     </div>
@@ -277,7 +273,7 @@ export const advEx3Slide3 = `
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 4: <span>Demostración PC (3/3)</span></h2>
     <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
-        <strong>Argumento:</strong> d → (a ∨ c), d ∧ ¬a ∴ c
+        <strong>Argumento:</strong> d → (a ∨ c), d ∧ ¬a ∴ d → c
     </div>
     <div class="content">
         <div class="formal-code" style="padding: 15px;">
@@ -291,17 +287,14 @@ export const advEx3Slide3 = `
                     </tr>
                 </thead>
                 <tbody>
-                    <tr style="opacity: 0.6;"><td style="text-align:center;">8</td><td>t</td><td style="color:var(--text-dim);"><span title="Recuperamos 't' del análisis previo para usarlo como el disparador final del condicional que obtendremos en el paso 12.">Obtenida de h (Paso anterior)</span></td></tr>
-                    <tr style="opacity: 0.6;"><td style="text-align:center;">9</td><td>a</td><td style="color:var(--text-dim);"><span title="Recuperamos 'a' para fabricar el antecedente de la bicondicional en la línea 10, permitiendo el avance de la prueba.">Obtenida de h (Paso anterior)</span></td></tr>
-                    <tr><td style="text-align:center;">10</td><td>¬o ∨ a</td><td style="color:var(--text-dim);"><span title="Construimos la estructura (¬o ∨ a) mediante Adición. Este paso es un ejemplo de 'preparación de estructura' para poder detonar la Premisa 2 en el siguiente movimiento.">Adición y conmutativa en 9</span></td></tr>
-                    <tr><td style="text-align:center;">11</td><td>¬c</td><td style="color:var(--text-dim);"><span title="Al haber validado un lado de la bicondicional de la Premisa 2 (paso 10), la lógica nos entrega obligatoriamente el otro lado, dándonos el valor de ¬c.">Equivalencia bicondicional entre 2 y 10</span></td></tr>
-                    <tr><td style="text-align:center;">12</td><td>t → n</td><td style="color:var(--text-dim);"><span title="Aplicamos Silogismo Disyuntivo en la Premisa 1 usando ¬c. Como descartamos la primera opción de la disyunción, el sistema nos entrega el condicional (t → n) como única verdad restante.">Silogismo disyuntivo entre 1 y 11</span></td></tr>
-                    <tr><td style="text-align:center;">13</td><td><strong>n</strong></td><td style="color:var(--text-dim);"><span title="Ejecutamos el Modus Ponens final usando la 't' que extrajimos de la hipótesis original. Al alcanzar 'n', hemos completado el requisito de la Prueba Condicional.">Modus ponens entre 12 y 8</span></td></tr>
-                    <tr style="border-top: 1px dashed rgba(255,255,255,0.3); background: rgba(255,255,255,0.05);"><td style="text-align:center; padding: 15px 0;">14</td><td style="padding: 15px 0;">∴ <strong>h → n</strong></td><td style="color:var(--ucv-accent); padding: 15px 0;"><span title="Concluimos la Prueba Condicional. Dado que asumiendo 'h' (paso 6) logramos derivar válidamente 'n' (paso 13), queda demostrado que la relación condicional h → n es verdadera.">Prueba Condicional 6-13</span></td></tr>
+                    <tr style="opacity: 0.6;"><td style="text-align:center;">5</td><td>¬a</td><td style="color:var(--text-dim);">Premisa 2</td></tr>
+                    <tr style="opacity: 0.6;"><td style="text-align:center;">6</td><td>a ∨ c</td><td style="color:var(--text-dim);">Modus ponens entre 1 y 3</td></tr>
+                    <tr><td style="text-align:center;">7</td><td>c</td><td style="color:var(--text-dim);"><span title="Con la negación de a, el silogismo disyuntivo nos deja solo c como posibilidad válida.">Silogismo disyuntivo entre 6 y 5</span></td></tr>
+                    <tr style="border-top: 1px dashed rgba(255,255,255,0.3); background: rgba(255,255,255,0.05);"><td style="text-align:center; padding: 15px 0;">8</td><td style="padding: 15px 0;">∴ <strong>d → c</strong></td><td style="color:var(--ucv-accent); padding: 15px 0;"><span title="Al asumir d se deriva c, por lo que la implicación queda justificada.">Cierre de la prueba condicional</span></td></tr>
                 </tbody>
             </table>
             <div style="margin-top: 15px; color: var(--text-dim); text-align: center;">
-                <em>(Llegamos a la n exitosamente. Se cierra la suposición y se forma la implicación)</em>
+                <em>(La suposición conduce a c, por tanto el condicional queda demostrado)</em>
             </div>
         </div>
     </div>
@@ -366,19 +359,19 @@ export const advEx5Slide1 = `
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 6: <span>Desafío de Simbolización (5.e) (1/3)</span></h2>
     <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
-        <strong>Argumento:</strong> r → ¬(p ∨ q), p ∨ t, ¬t ∧ s ∴ r → u
+        <strong>Argumento:</strong> Si hay desidia, entonces no hay espíritu de trabajo o no hay exigencia personal o hay huelgas. Si hay huelgas y desidia, entonces hay una situación de pánico. No hay responsabilidad o hay exigencia personal. Si tenemos honestidad, entonces hay responsabilidad, aumenta la producción y hay espíritu de trabajo. Si aumenta la producción, entonces no hay situación de pánico y hay desidia. Por lo tanto, no tenemos honestidad.
     </div>
     <div class="content">
         <div class="grid-2">
             <div class="example-card">
                 <h3 style="color:var(--ucv-accent)">Argumento en Lenguaje Natural</h3>
                 <p style="font-style: italic; line-height: 1.6; color: var(--text-dim);">
-                    <span title="[P1] Premisa 1" style="cursor:help;">"<span title="[P1] Conector: Condicional" style="color:var(--ucv-accent);">Si</span> hay desidia, <span title="[P1] Conector: Condicional" style="color:var(--ucv-accent);">entonces</span> <span title="[P1] Operador: Negación" style="color:var(--ucv-accent);">no</span> hay espíritu de trabajo, <span title="[P1] Conector: Disyunción" style="color:var(--ucv-accent);">o</span> <span title="[P1] Operador: Negación" style="color:var(--ucv-accent);">no</span> hay exigencia personal, <span title="[P1] Conector: Disyunción" style="color:var(--ucv-accent);">o</span> hay huelgas.</span>
-                    <span title="[P2] Premisa 2" style="cursor:help;"><span title="[P2] Conector: Condicional" style="color:var(--ucv-accent);">Si</span> hay huelgas <span title="[P2] Conector: Conjunción" style="color:var(--ucv-accent);">y</span> desidia, <span title="[P2] Conector: Condicional" style="color:var(--ucv-accent);">entonces</span> hay una situación de pánico.</span>
-                    <span title="[P3] Premisa 3" style="cursor:help;"><span title="[P3] Operador: Negación" style="color:var(--ucv-accent);">No</span> hay responsabilidad <span title="[P3] Conector: Disyunción" style="color:var(--ucv-accent);">o</span> hay exigencia personal.</span>
-                    <span title="[P4] Premisa 4" style="cursor:help;"><span title="[P4] Conector: Condicional" style="color:var(--ucv-accent);">Si</span> tenemos honestidad, <span title="[P4] Conector: Condicional" style="color:var(--ucv-accent);">entonces</span> hay responsabilidad, aumenta la producción <span title="[P4] Conector: Conjunción" style="color:var(--ucv-accent);">y</span> hay espíritu de trabajo.</span>
-                    <span title="[P5] Premisa 5" style="cursor:help;"><span title="[P5] Conector: Condicional" style="color:var(--ucv-accent);">Si</span> aumenta la producción, <span title="[P5] Conector: Condicional" style="color:var(--ucv-accent);">entonces</span> <span title="[P5] Operador: Negación" style="color:var(--ucv-accent);">no</span> hay situación de pánico <span title="[P5] Conector: Conjunción" style="color:var(--ucv-accent);">y</span> hay desidia.</span>
-                    <span title="[C] Conclusión" style="cursor:help;"><span title="[C] Indicador de Conclusión" style="color:var(--ucv-accent); border-bottom: 1px dashed;">Por lo tanto</span>, <span title="[C] Operador: Negación" style="color:var(--ucv-accent);">no</span> tenemos honestidad."</span>
+                    <span title="[P1] Premisa 1" style="cursor:help;">Si hay desidia, entonces no hay espíritu de trabajo, o no hay exigencia personal, o hay huelgas.</span>
+                    <span title="[P2] Premisa 2" style="cursor:help;">Si hay huelgas y desidia, entonces hay una situación de pánico.</span>
+                    <span title="[P3] Premisa 3" style="cursor:help;">No hay responsabilidad o hay exigencia personal.</span>
+                    <span title="[P4] Premisa 4" style="cursor:help;">Si tenemos honestidad, entonces hay responsabilidad, aumenta la producción y hay espíritu de trabajo.</span>
+                    <span title="[P5] Premisa 5" style="cursor:help;">Si aumenta la producción, entonces no hay situación de pánico y hay desidia.</span>
+                    <span title="[C] Conclusión" style="cursor:help;">Por lo tanto, no tenemos honestidad.</span>
                 </p>
             </div>
             
@@ -387,8 +380,8 @@ export const advEx5Slide1 = `
                     <div>
                         <h3 style="color:var(--ucv-accent);">Proposiciones Simples</h3>
                         <ul style="line-height: 1.4; color: var(--text-dim); list-style: none; padding: 0;">
-                            <li><strong>d:</strong> desidia | <strong>e:</strong> espíritu</li>
-                            <li><strong>x:</strong> exigencia | <strong>h:</strong> huelgas</li>
+                            <li><strong>d:</strong> desidia | <strong>e:</strong> espíritu de trabajo</li>
+                            <li><strong>x:</strong> exigencia personal | <strong>h:</strong> huelgas</li>
                             <li><strong>p:</strong> pánico | <strong>r:</strong> responsabilidad</li>
                             <li><strong>o:</strong> honestidad | <strong>n:</strong> producción</li>
                         </ul>
@@ -472,7 +465,7 @@ export const advEx5Slide3 = `
                     <tr><td style="text-align:center;">17</td><td>e ∧ x</td><td style="color:var(--text-dim);"><span title="Unimos las verdades 'e' (paso 12) y 'x' (paso 14) mediante Conjunción. Al tener ambas piezas, estamos listos para 'disparar' el condicional que creamos en el paso anterior.">Conjunción entre 12 y 14</span></td></tr>
                     <tr><td style="text-align:center;">18</td><td>h</td><td style="color:var(--text-dim);"><span title="Ejecutamos el Modus Ponens sobre el condicional del paso 16. Al validar su antecedente (e ∧ x), la lógica nos entrega 'h', la pieza que faltaba para la Premisa 2.">Modus ponens entre 16 y 17</span></td></tr>
                     <tr><td style="text-align:center;">19</td><td>h ∧ d</td><td style="color:var(--text-dim);"><span title="Unimos 'h' (paso 18) con 'd' (paso 10) mediante Conjunción. Esta estructura es el antecedente exacto que la Premisa 2 exige para liberar su información.">Conjunción entre 18 y 10</span></td></tr>
-                    <tr><td style="text-align:center;">20</td><td>p</td><td style="color:var(--text-dim);"><span title="Aplicamos Modus Ponens en la Premisa 2. Al haber cumplido la condición (h ∧ d), obtenemos 'p', que entra en colisión directa con nuestro derivado anterior.">Modus ponens entre 2 and 19</span></td></tr>
+                    <tr><td style="text-align:center;">20</td><td>p</td><td style="color:var(--text-dim);"><span title="Aplicamos Modus Ponens en la Premisa 2. Al haber cumplido la condición (h ∧ d), obtenemos 'p', que entra en colisión directa con nuestro derivado anterior.">Modus ponens entre 2 y 19</span></td></tr>
                     <tr><td style="text-align:center;">21</td><td><strong style="color:#ff7878;">p ∧ ¬p</strong></td><td style="color:var(--text-dim);"><span title="Unimos 'p' (paso 20) con '¬p' (paso 11) mediante Conjunción. Al afirmar la verdad y falsedad simultánea de 'p', formalizamos el Absurdo que invalida la suposición RAA.">Conjunción entre 20 y 11, contradicción</span></td></tr>
                     <tr style="border-top: 1px dashed rgba(255,255,255,0.3); background: rgba(255,255,255,0.05);"><td style="text-align:center; padding: 12px 0;">22</td><td style="padding: 12px 0;">∴ <strong>¬o</strong></td><td style="color:var(--ucv-accent); padding: 12px 0;"><span title="Como suponer 'o' (paso 6) condujo a un imposible lógico (paso 21), la honestidad 'o' es falsa. Por lo tanto, queda demostrada la conclusión ¬o.">RAA (Supuesto en 6 rechazado)</span></td></tr>
                 </tbody>
@@ -486,7 +479,7 @@ export const advEx6Slide1 = `
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 7: <span>Prueba de Inconsistencia (1/2)</span></h2>
     <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
-        <strong>Argumento:</strong> (t ∨ s) → ¬(p ∧ q), (t ∨ m) ∧ (p ∧ r), ¬s → q ∴ m ∧ r
+        <strong>Premisas:</strong> p ∧ q, p → ¬r, (¬r ∧ s) → ¬q, q → s
     </div>
     <div class="content">
         <div class="grid-2">
@@ -507,7 +500,7 @@ export const advEx6Slide1 = `
                 <p style="line-height: 1.5; opacity: 0.9;">
                     Aquí no hay conclusión a la cual llegar. El mandato es probar que el conjunto de premisas es <strong>inconsistente</strong>. Para lograrlo, nuestra meta es usar las reglas de inferencia para fabricar una <strong>contradicción</strong> evidente (ej: r ∧ ¬r).<br><br>
                     Al observar el planteamiento, la <strong>Premisa 1</strong> (p ∧ q) permite, por Simplificación, obtener tanto <strong>p</strong> como <strong>q</strong> de forma aislada.<br><br>
-                    Con la proposición <strong>p</strong> se habilita la Premisa 2, y con <strong>q</strong> se procesan las Premisas 3 y 4 mediante Modus Tollens y Modus Ponens respectivamente. El objetivo es restringir los valores lógicos hasta evidenciar la contradicción.
+                    Con <strong>p</strong> activamos la Premisa 2 y obtenemos <strong>¬r</strong>. Con <strong>q</strong> abrimos el camino hacia la Premisa 3 y la Premisa 4, hasta construir la contradicción final.
                 </p>
             </div>
         </div>
@@ -519,7 +512,7 @@ export const advEx6Slide2 = `
     <div class="section-tag">Sección 3: Práctica</div>
     <h2 class="slide-title">Ejercicio 7: <span>Demostración (2/2)</span></h2>
     <div class="argument-header" style="text-align: center; font-size: 16px; font-family: monospace; color: var(--ucv-accent); background: rgba(200,240,122,0.1); padding: 8px; border-radius: 6px; margin: 10px auto 5px auto; width: 90%; border: 1px solid rgba(200,240,122,0.2);">
-        <strong>Argumento:</strong> (t ∨ s) → ¬(p ∧ q), (t ∨ m) ∧ (p ∧ r), ¬s → q ∴ m ∧ r
+        <strong>Premisas:</strong> p ∧ q, p → ¬r, (¬r ∧ s) → ¬q, q → s
     </div>
     <div class="content">
         <div class="formal-code" style="padding: 15px;">
@@ -540,11 +533,11 @@ export const advEx6Slide2 = `
                     <tr style="background: rgba(255,255,255,0.02);"><td>5</td><td>p</td><td><span title="Separamos 'p' de la Premisa 1 porque es la llave para activar la Premisa 2.">Simplificación en 1</span></td></tr>
                     <tr><td>6</td><td><strong style="color:var(--ucv-accent);">¬r</strong></td><td><span title="Ejecutamos la Premisa 2 usando 'p' para obtener la primera parte de nuestra futura contradicción.">Modus ponens entre 5 y 2</span></td></tr>
                     <tr style="background: rgba(255,255,255,0.02);"><td>7</td><td>q</td><td><span title="Extraemos 'q' de la Premisa 1 para usarla como llave en la Premisa 3 y la Premisa 4.">Simplificación en 1</span></td></tr>
-                    <tr><td>8</td><td>¬(¬r ∧ s)</td><td><span title="Usamos 'q' (y la doble negación ¬¬q) para aplicar MT en la Premisa 3 y liberar el paréntesis.">Modus tollens entre 7 y 3 (usando q como ¬¬q)</span></td></tr>
-                    <tr><td>9</td><td>r ∨ ¬s</td><td><span title="Rompemos el paréntesis negado para poder trabajar con sus componentes internos de forma aislada.">Morgan para ∧ y doble negación en 8</span></td></tr>
-                    <tr><td>10</td><td>s → r</td><td><span title="Convertimos la disyunción en condicional (EPI) para poder encadenarla con la Premisa 4.">Conmutativa para ∨ y EPI en 9</span></td></tr>
-                    <tr><td>11</td><td>q → r</td><td><span title="Unimos la Premisa 4 (q→s) con nuestro nuevo condicional (s→r) para crear un camino directo de 'q' a 'r'.">Silogismo hipotético entre 4 y 10</span></td></tr>
-                    <tr><td>12</td><td><strong style="color:var(--ucv-accent);">r</strong></td><td><span title="Al tener el puente (q→r) y la verdad 'q' (paso 7), obtenemos 'r' para cerrar la contradicción.">Modus ponens entre 7 y 11</span></td></tr>
+                    <tr><td>8</td><td>¬(¬r ∧ s)</td><td><span title="Desde q y la Premisa 3 aplicamos Modus Tollens para negar la conjunción interna.">Modus tollens entre 7 y 3</span></td></tr>
+                    <tr><td>9</td><td>r ∨ ¬s</td><td><span title="Aplicamos De Morgan y doble negación para reescribir el paso 8 en una forma más útil.">De Morgan y doble negación en 8</span></td></tr>
+                    <tr><td>10</td><td>s → r</td><td><span title="Reordenamos la disyunción y la convertimos a condicional mediante EPI.">Conmutativa para ∨ y EPI en 9</span></td></tr>
+                    <tr><td>11</td><td>q → r</td><td><span title="Encadenamos la Premisa 4 con el nuevo condicional del paso 10.">Silogismo hipotético entre 4 y 10</span></td></tr>
+                    <tr><td>12</td><td><strong style="color:var(--ucv-accent);">r</strong></td><td><span title="Con q y el puente q→r obtenemos r, cerrando el tramo principal de la derivación.">Modus ponens entre 7 y 11</span></td></tr>
                     
                     <tr style="border-top: 1px dashed rgba(255,255,255,0.3); background: rgba(255,120,120,0.1);">
                         <td>13</td>
@@ -554,7 +547,7 @@ export const advEx6Slide2 = `
                 </tbody>
             </table>
             <div style="margin-top: 15px; color: var(--text-dim); text-align: center;">
-                <em>(Como la conjunción de las premisas deriva en FALSO, <strong>las premisas son inconsistentes</strong>)</em>
+                <em>(La contradicción <strong>¬r ∧ r</strong> confirma que <strong>las premisas son inconsistentes</strong>)</em>
             </div>
         </div>
     </div>

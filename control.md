@@ -20,7 +20,7 @@ Documentar qué se ha hecho, qué falta y cualquier decisión importante sobre e
 ### Base del proyecto
 - [x] Creado archivo de control
 - [x] Agregados logos institucionales en la carpeta `assets/logos`
-- [x] Vinculados los logos en la portada de `Clase4.html`
+- [x] Vinculados los logos en la portada de `index.html`
 - [x] Actualizada la portada con nombre, fecha y texto de clase práctica
 - [x] Ajustado el texto institucional a Escuela de Computación | Facultad de Ciencias
 - [x] Ajustado el texto institucional a Universidad Central de Venezuela
@@ -40,14 +40,14 @@ Documentar qué se ha hecho, qué falta y cualquier decisión importante sobre e
 - [x] Reescrita la lámina de cuatro casos para que quede lógicamente precisa
 - [x] Simplificada y aclarada la lámina de cuatro casos para que no se vea cargada ni confusa
 - [x] Rehecha desde cero la lámina de cuatro casos con un solo caso inválido
-- [x] Reemplazado 'Premisas falsas' por 'Premisas inconsistentes' y añadido definición de 'inconsistente' en `Clase4.html`
+- [x] Reemplazado 'Premisas falsas' por 'Premisas inconsistentes' y añadido definición de 'inconsistente' en `index.html`
 - [x] Eliminado el "Resumen corto" de la lámina de casos por solicitud del usuario
 
 ### Legibilidad
 - [x] Aumentado progresivamente el tamaño de letra de los textos de cuerpo hasta 18px para mejorar legibilidad
 
 ### Modularización CSS
-- [x] Extraído todo el CSS inline de `Clase4.html` a archivos modulares en `assets/css`
+- [x] Extraído todo el CSS inline de `index.html` a archivos modulares en `assets/css`
 - [x] Creado `assets/css/base.css` para variables, reset y estilos base
 - [x] Creado `assets/css/components.css` para componentes visuales y layouts de láminas
 - [x] Creado `assets/css/overrides.css` para ajustes finales (incluye tipografía de cuerpo y utilidades)
@@ -58,7 +58,7 @@ Documentar qué se ha hecho, qué falta y cualquier decisión importante sobre e
 - [x] Modularizado el contenido de las láminas en archivos JS por sección dentro de `assets/js/slides`
 - [x] Creado `assets/js/slides/index.js` para definir el orden de render de las láminas
 - [x] Creado `assets/js/renderSlides.js` para ensamblar e inyectar las láminas en el DOM
-- [x] Simplificado `Clase4.html` para usar un contenedor raíz (`#slides-root`) y carga por módulos
+- [x] Simplificado `index.html` para usar un contenedor raíz (`#slides-root`) y carga por módulos
 - [x] Restaurado el texto en español con acentos y símbolos lógicos en los módulos de láminas
 - [x] Verificada ausencia de errores de sintaxis tras la modularización
 - [x] Implementada numeración dinámica de láminas (X / Y) en la esquina inferior derecha

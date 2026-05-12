@@ -297,9 +297,14 @@ if (root) {
     
     // Keyboard Navigation
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowRight' || e.key === 'Space' || e.key === 'Enter') {
+        const isTypingField = e.target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName);
+        if (isTypingField || e.target?.isContentEditable) return;
+
+        if (e.key === 'ArrowRight' || e.code === 'Space' || e.key === 'Enter') {
+            e.preventDefault();
             updateSlide(currentIndex + 1);
         } else if (e.key === 'ArrowLeft' || e.key === 'Backspace') {
+            e.preventDefault();
             updateSlide(currentIndex - 1);
         }
     });
@@ -308,9 +313,12 @@ if (root) {
     const navUI = document.createElement('div');
     navUI.innerHTML = `
         <div id="nav-controls" style="position: fixed; bottom: 50px; left: 50%; transform: translateX(-50%); display: flex; gap: 20px; background: rgba(11,15,18,0.9); padding: 8px 25px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.15); z-index: 1000; backdrop-filter: blur(8px); opacity: 0.15; transition: opacity 0.3s ease, transform 0.3s ease;">
-            <button id="prev-slide" style="background: none; border: none; color: var(--ucv-accent); font-size: 20px; cursor: pointer; transition: transform 0.2s;"><i class="fas fa-chevron-left"></i></button>
-            <span style="color: var(--text-dim); font-size: 14px; display: flex; align-items: center; user-select: none;">Navegación</span>
-            <button id="next-slide" style="background: none; border: none; color: var(--ucv-accent); font-size: 20px; cursor: pointer; transition: transform 0.2s;"><i class="fas fa-chevron-right"></i></button>
+            <button id="prev-slide" aria-label="Ir a la diapositiva anterior" style="background: none; border: none; color: var(--ucv-accent); font-size: 20px; cursor: pointer; transition: transform 0.2s;"><i class="fas fa-chevron-left"></i></button>
+            <span style="color: var(--text-dim); font-size: 13px; display: flex; align-items: center; user-select: none; gap: 8px; text-transform: uppercase; letter-spacing: 1px;">
+                <span>Navegación</span>
+                <span style="opacity: 0.7;">← → / Espacio / Enter</span>
+            </span>
+            <button id="next-slide" aria-label="Ir a la siguiente diapositiva" style="background: none; border: none; color: var(--ucv-accent); font-size: 20px; cursor: pointer; transition: transform 0.2s;"><i class="fas fa-chevron-right"></i></button>
         </div>
     `;
     document.body.appendChild(navUI);
@@ -323,7 +331,7 @@ if (root) {
     // Index Navigation Button (Bottom Left inside Slide Container)
     const indexUI = document.createElement('div');
     indexUI.innerHTML = `
-        <button id="go-to-index" style="position: absolute; bottom: 40px; left: 80px; background: rgba(11,15,18,0.8); border: 1px solid rgba(255,255,255,0.1); color: var(--text-dim); font-size: 16px; padding: 12px 20px; border-radius: 30px; cursor: pointer; display: flex; align-items: center; gap: 8px; z-index: 1000; backdrop-filter: blur(8px); opacity: 0.15; transition: all 0.2s;">
+        <button id="go-to-index" aria-label="Volver al índice" style="position: absolute; bottom: 40px; left: 80px; background: rgba(11,15,18,0.8); border: 1px solid rgba(255,255,255,0.1); color: var(--text-dim); font-size: 16px; padding: 12px 20px; border-radius: 30px; cursor: pointer; display: flex; align-items: center; gap: 8px; z-index: 1000; backdrop-filter: blur(8px); opacity: 0.15; transition: all 0.2s;">
             <i class="fas fa-home"></i> Índice
         </button>
     `;

@@ -2,6 +2,7 @@ export const coverSlide = `
 <div class="slide">
     <div class="content cover-content">
         <div class="brand-logos" aria-label="Logos institucionales">
+            <img src="assets/logos/escuela.png" alt="Logo de la escuela">
             <img src="assets/logos/uni.png" alt="Logo de la universidad">
             <img src="assets/logos/facu.png" alt="Logo de la facultad">
         </div>
