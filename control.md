@@ -4,11 +4,14 @@
 Documentar qué se ha hecho, qué falta y cualquier decisión importante sobre el material de la clase.
 
 ## Resumen actual
-- Archivo principal: `Clase4.html` (ensamblador)
-- Estado general: estructura modular implementada en CSS y contenido por módulos JS
+- Archivo principal: `index.html` (ensamblador)
+- Estado general: estructura modular implementada en CSS y contenido por módulos JS.
+- Estado del deck: presentación completa de 61 slides con navegación, tooltips y materiales de práctica integrados.
 
 ## Pendientes (prioridad)
-- [ ] Extender los tooltips de justificación a todos los pasos de demostración (explicando el "porqué" específico).
+- [ ] Extender los tooltips de justificación a los pasos que todavía no los tienen en los bloques de demostración avanzada.
+- [ ] Revisar inconsistencias puntuales entre título, argumento y desarrollo en algunos ejercicios avanzados.
+- [ ] Corregir detalles menores de texto y estilo en varias láminas (por ejemplo, mezclas de idioma o justificaciones verbales).
 - [ ] Revisión final de consistencia visual en diferentes resoluciones.
 - [ ] Verificar que todos los ejercicios de examen UCV tengan sus referencias bibliográficas exactas.
 
