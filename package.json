@@ -1,0 +1,24 @@
+{
+  "name": "md1-clase-practica-4",
+  "version": "1.0.0",
+  "description": "Simuladores en vivo y presentación interactiva de Lógica Proposicional para Matemática Discreta I (UCV).",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "logica",
+    "matematica-discreta",
+    "ucv",
+    "sandbox",
+    "proposicional",
+    "educacion"
+  ],
+  "author": "Universidad Central de Venezuela (UCV) - Estudiantes / Cátedra",
+  "license": "MIT"
+}
