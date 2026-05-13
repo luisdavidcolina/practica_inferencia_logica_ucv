@@ -1000,3 +1000,42 @@ th:hover, .case-formula:hover, .formal-code-main:hover, .concept-tag:hover, .cas
     color: #ffffff;
     text-shadow: 0 0 10px rgba(255,255,255,0.8);
 }
+
+@media (max-width: 768px) {
+    .inline-reveal-container {
+        position: relative;
+        display: inline-block;
+        width: 1px;
+        height: 1px;
+        overflow: visible;
+        float: right;
+        vertical-align: middle;
+    }
+
+    .reveal-eye-btn-mini {
+        position: absolute;
+        top: -22px;
+        right: -6px;
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+        min-height: 56px;
+        padding: 0;
+        line-height: 1;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(1.55) !important;
+        transform-origin: center;
+        background: transparent !important;
+        border: none !important;
+        opacity: 1 !important;
+        z-index: 5;
+    }
+
+    .reveal-eye-btn-mini i {
+        font-size: 26px;
+        line-height: 1;
+    }
+}

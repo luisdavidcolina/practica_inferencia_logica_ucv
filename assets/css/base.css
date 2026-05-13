@@ -38,6 +38,16 @@ body {
     }
 }
 
+@media (max-width: 768px), (pointer: coarse) and (max-width: 950px) {
+    #slides-root {
+        height: 860px;
+    }
+
+    .slide {
+        height: 860px;
+    }
+}
+
 .slide {
     width: 1280px;
     height: 720px;
