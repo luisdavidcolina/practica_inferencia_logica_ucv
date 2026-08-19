@@ -1,4 +1,5 @@
 import { coverSlide } from './cover.js';
+import { rubricaSlide, erroresComunesSlide, faqSlide, autoevaluacionSlide, documentosSlide } from './cierre.js';
 import { indexSlide } from './index-slide.js';
 import { conceptsSlide } from './concepts.js';
 import { relationSlide } from './relation.js';
@@ -142,6 +143,12 @@ export const slides = [
     combinedEx2Slide1,
     combinedEx2Slide2,
     combinedEx2Slide3,
+    // Sección 5: Evaluación y cierre
+    rubricaSlide,
+    erroresComunesSlide,
+    faqSlide,
+    autoevaluacionSlide,
+    documentosSlide,
     bibliographySlide
 ];
 
